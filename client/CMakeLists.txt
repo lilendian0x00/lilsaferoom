@@ -3,10 +3,11 @@ set(CMAKE_C_STANDARD 99)
 
 project(client-lilsaferoom)
 
-add_executable(${PROJECT_NAME}
-        ${CMAKE_CURRENT_SOURCE_DIR}/client/src/main.c)
+file(GLOB_RECURSE SRC_FILES src/*.c)
 
+add_executable(${PROJECT_NAME}
+        ${SRC_FILES})
 
 include_directories(
-        include
+        include/
 )

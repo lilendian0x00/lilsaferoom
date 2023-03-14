@@ -3,9 +3,15 @@ set(CMAKE_C_STANDARD 99)
 
 project(server-lilsaferoom)
 
+file(GLOB_RECURSE SRC_FILES src/*.c)
+
 add_executable(${PROJECT_NAME}
-        ${CMAKE_CURRENT_SOURCE_DIR}/server/src/main.c)
+        ${SRC_FILES}
+        )
 
 include_directories(
-        include
+        include/
 )
+
+target_link_libraries(${PROJECT_NAME}
+        curses)
