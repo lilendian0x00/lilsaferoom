@@ -46,6 +46,10 @@
 *.pdb
 /cmake-build-debug/
 /cmake-build-release/
+server/cmake-build-debug/
+client/cmake-build-debug/
+server/cmake-build-release/
+client/cmake-build-release/
 
 # Kernel Module Compile Results
 *.mod*
