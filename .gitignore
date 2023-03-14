@@ -1,3 +1,6 @@
+# ide
+.idea/
+
 # Prerequisites
 *.d
 
@@ -41,6 +44,8 @@
 *.su
 *.idb
 *.pdb
+/cmake-build-debug/
+/cmake-build-release/
 
 # Kernel Module Compile Results
 *.mod*
